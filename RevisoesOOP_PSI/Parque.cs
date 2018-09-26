@@ -119,7 +119,14 @@ namespace RevisoesOOP_PSI
         /// </summary>
         public void Estado()
         {
-
+            LugaresVagos();
+            Console.WriteLine("Lugares ocupados: {0}", lugares.Count);
+            int contav = 0, contam = 0, contap = 0;
+            for (int i = 0; i < lugares.Count; i++)
+            {
+                if (lugares[i] is Veiculo)
+                    contav++;
+            }
         }
     }
 }
