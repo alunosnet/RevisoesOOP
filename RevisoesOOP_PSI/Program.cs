@@ -10,6 +10,8 @@ namespace RevisoesOOP_PSI
     {
         static void Main(string[] args)
         {
+            Parque parque = new Parque();
+            parque.Menu();
         }
     }
 }
