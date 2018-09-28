@@ -107,10 +107,20 @@ namespace RevisoesOOP_PSI
         }
         public void Procurar()
         {
+            Console.Write("Marca a pesquisar: ");
+            string marca = Console.ReadLine();
+            foreach (Veiculo v in lugares)
+                if (v.marca == marca)
+                    v.Mostrar();
 
         }
         public void Listar()
         {
+            foreach (Veiculo v in lugares)
+            {
+                v.Mostrar();
+                Console.WriteLine(v.GetType());
+            }
 
         }
         /// <summary>
