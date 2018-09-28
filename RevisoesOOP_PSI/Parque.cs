@@ -126,7 +126,14 @@ namespace RevisoesOOP_PSI
             {
                 if (lugares[i] is Veiculo)
                     contav++;
+                if (lugares[i] is Mercadorias)
+                    contam++;
+                if (lugares[i] is Passageiros)
+                    contap++;
             }
+            Console.WriteLine("Tem {0} veículos ligeiros; {1} de mercadorias e {2} de passageiros ",
+                contav, contam, contap);
+
         }
     }
 }
